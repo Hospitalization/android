@@ -13,17 +13,16 @@ class Sub1Activity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sub1)
 
-        buttonTouch.setOnTouchListener{ v: View, m: MotionEvent ->
+        buttonTouch.setOnTouchListener { v: View, m: MotionEvent ->
             handleTouch(m)
-            true}
+            true
+        }
     }
 
-    private fun handleTouch(m: MotionEvent)
-    {
+    private fun handleTouch(m: MotionEvent) {
         val pointerCount = m.pointerCount
 
-        for (i in 0 until pointerCount)
-        {
+        for (i in 0 until pointerCount) {
             val x = m.getX(i)
             val y = m.getY(i)
             val id = m.getPointerId(i)

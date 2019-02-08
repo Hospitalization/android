@@ -18,7 +18,7 @@ class Sub0Activity : AppCompatActivity() {
         textViewSub0_1.text = val1
 
         var sec = 0
-        timer(period=1000){
+        timer(period = 1000) {
             sec++
             runOnUiThread {
                 textViewTimer.text = "$sec"
