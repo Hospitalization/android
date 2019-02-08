@@ -7,4 +7,19 @@
         android:layout_height="match_parent"
         tools:context=".Sub0Activity">
 
+    <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent" android:id="@+id/textViewSub0"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+    <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/textViewSub1" android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/textViewSub0"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
 </android.support.constraint.ConstraintLayout>
