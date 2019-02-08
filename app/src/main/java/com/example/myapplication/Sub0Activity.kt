@@ -14,8 +14,8 @@ class Sub0Activity : AppCompatActivity() {
         val val0 = intent.getStringExtra("val0").toString()
         val val1 = intent.getStringExtra("val1").toString()
 
-        textViewSub0.text = val0
-        textViewSub1.text = val1
+        textViewSub0_0.text = val0
+        textViewSub0_1.text = val1
 
         var sec = 0
         timer(period=1000){

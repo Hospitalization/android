@@ -20,5 +20,10 @@ class MainActivity : AppCompatActivity() {
                 "val1" to val1
             )
         }
+
+        buttonSub1.setOnClickListener{
+            startActivity<Sub1Activity>()
+        }
+
     }
 }
